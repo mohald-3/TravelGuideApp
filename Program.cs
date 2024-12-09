@@ -1,10 +1,15 @@
-﻿namespace TravelGuideApp
+﻿using System.Text.Json;
+
+namespace TravelGuideApp
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string TravelDataJSONfilePath = "cities.json";
+            string AllTravelDataJSONfilePathTyp = File.ReadAllText(TravelDataJSONfilePath);
+            TravelData travelData = JsonSerializer.Deserialize<TravelData>(AllTravelDataJSONfilePathTyp)!;
+             
         }
-    }
+     }
 }
