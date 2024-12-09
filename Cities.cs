@@ -8,8 +8,8 @@ namespace TravelGuideApp
 {
     public class Cities
     {
-        public string Name { get; set; }
-      List<Connection> Connections { get; set; }
+        public string name { get; set; }
+        public List<Connection> connections { get; set; }
         public Cities() { }
 
     }

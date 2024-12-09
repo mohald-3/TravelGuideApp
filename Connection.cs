@@ -20,7 +20,6 @@ namespace TravelGuideApp
             Time = time;
             Cost = cost;
             TravelMethod = travelMethod;
-
         }
 
     }

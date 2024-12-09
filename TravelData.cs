@@ -10,7 +10,7 @@ namespace TravelGuideApp
     public class TravelData
     {
         [JsonPropertyName("cities")]
-        public List<TravelData> AllTravelDataJson { get; set; } = new List<TravelData>();
+        public List<Cities> AllTravelDataJson { get; set; } = new List<Cities>();
 
     }
 }
